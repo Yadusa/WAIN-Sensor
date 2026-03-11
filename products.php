@@ -903,7 +903,7 @@ if ($all_products_result->num_rows > 0) {
                     <li><a href="index.php">Home</a></li>
                     <li><a href="products.php" style="background-color: rgba(255, 255, 255, 0.2);">Products</a></li>
                     <li><a href="index.php#about">About Us</a></li>
-                    <li><a href="#contact">Inquiry</a></li>
+                    <li><a href="contact.php">Inquiry</a></li>
                 </ul>
             </nav>
         </div>
