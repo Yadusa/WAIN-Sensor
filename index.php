@@ -34,6 +34,34 @@ if ($all_products_result->num_rows > 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $page_title; ?></title>
     <style>
+
+        nav a,
+        nav a:visited,
+        nav a:hover,
+        nav a:active {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* Make all navigation links white and remove underline */
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Ensure visited links stay white */
+        nav a:visited {
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        }
+
+        /* Optional: Change color when hovering */
+        nav a:hover {
+            color: #e0e0e0;
+            text-decoration: underline;
+        }
         /* Reset and Base Styles */
         * {
             margin: 0;
