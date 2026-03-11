@@ -690,9 +690,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <nav>
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="products.php" style="background-color: rgba(255, 255, 255, 0.2);">Products</a></li>
-                    <li><a href="index.php#about">About Us</a></li>
-                    <li><a href="contact.php">Inquiry</a></li>
+                    <li><a href="products.php" >Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="contact.php" style="background-color: rgba(255, 255, 255, 0.2);">Inquiry</a></li>
                 </ul>
             </nav>
         </div>
@@ -782,6 +782,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
 
                 <button type="submit" class="btn" id="submitBtn">Send Message</button>
+                <div id="formMessage" style="display: none; margin-top: 1rem; padding: 0.8rem; border-radius: 4px;"></div>
             </form>
         </div>
     </div>
@@ -821,46 +822,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         // Send to PHP endpoint
         fetch('submit_contact_database.php', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => {
-            if (!response.ok) throw new Error('Network response was not ok');
-            return response.text();
-        })
-        .then(data => {
-            showSuccessMessage(data);
-            document.getElementById('contactForm').reset();
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            showErrorMessage('Sorry, there was an error. Please try again or email us directly at info@wain-sensor.com');
-        })
-        .finally(() => {
-            submitBtn.textContent = originalBtnText;
-            submitBtn.disabled = false;
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                showSuccessMessage(data);
+                document.getElementById('contactForm').reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showErrorMessage('Sorry, there was an error. Please try again or email us directly at info@wain-sensor.com');
+            })
+            .finally(() => {
+                submitBtn.textContent = originalBtnText;
+                submitBtn.disabled = false;
+            });
         });
-    });
 
     function showSuccessMessage(message) {
-        const formMessage = document.getElementById('formMessage');
-        formMessage.textContent = message;
-        formMessage.style.background = '#d4edda';
-        formMessage.style.color = '#155724';
-        formMessage.style.border = '1px solid #c3e6cb';
-        formMessage.style.display = 'block';
-        formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
+            const formMessage = document.getElementById('formMessage');
+            formMessage.textContent = message;
+            formMessage.style.background = '#d4edda';
+            formMessage.style.color = '#155724';
+            formMessage.style.border = '1px solid #c3e6cb';
+            formMessage.style.display = 'block';
+            
+            formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
 
-    function showErrorMessage(message) {
-        const formMessage = document.getElementById('formMessage');
-        formMessage.textContent = message;
-        formMessage.style.background = '#f8d7da';
-        formMessage.style.color = '#721c24';
-        formMessage.style.border = '1px solid #f5c6cb';
-        formMessage.style.display = 'block';
-        formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
+        function showErrorMessage(message) {
+            const formMessage = document.getElementById('formMessage');
+            formMessage.textContent = message;
+            formMessage.style.background = '#f8d7da';
+            formMessage.style.color = '#721c24';
+            formMessage.style.border = '1px solid #f5c6cb';
+            formMessage.style.display = 'block';
+            
+            formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
 </script>
 
 </body>
