@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 
 // Create database
 $sql = "CREATE DATABASE IF NOT EXISTS wain_sensor_db";
-if ($conn->query($sql) {
+if ($conn->query($sql)) {
     echo "Database created successfully<br>";
 } else {
     echo "Error creating database: " . $conn->error;
