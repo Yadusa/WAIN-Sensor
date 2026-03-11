@@ -524,7 +524,7 @@ if ($all_products_result->num_rows > 0) {
                 <ul>
                     <li><a href="index.php" style="background-color: rgba(255, 255, 255, 0.2);">Home</a></li>
                     <li><a href="products.php">Products</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <a href="about.php">About Us</a>
                     <li><a href="contact.php">Inquiry</a></li>
                     
                 </ul>
@@ -609,26 +609,6 @@ if ($all_products_result->num_rows > 0) {
             <div class="cta-buttons">
                 <a href="products.php" class="btn btn-white">View All Products</a>
                 <a href="#contact" class="btn btn-transparent">Contact Sales</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Wain-Sensor</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Wain-Sensor has been a leading provider of precision sensor technology since 2010. We specialize in developing and manufacturing high-quality proximity and photoelectric sensors for a wide range of industrial applications.</p>
-                    <p>Our team of experienced engineers and technicians ensures that every product meets the highest standards of accuracy, reliability, and durability.</p>
-                    <p>With customers in over 30 countries, we're committed to delivering innovative sensing solutions that help businesses and individuals make better decisions based on accurate data.</p>
-                    <div style="margin-top: 2rem;">
-                        <a href="#contact" class="btn">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="about-image">
-                    Industry Innovation
-                </div>
             </div>
         </div>
     </section>
@@ -741,7 +721,7 @@ if ($all_products_result->num_rows > 0) {
                     <ul>
                         <li><a href="index.php">Home</a></li>
                         <li><a href="products.php">Products</a></li>
-                        <li><a href="#about">About Us</a></li>
+                        <li><a href="about.php">About Us</a></li>
                         <li><a href="#contact">Inquiry</a></li>
                     </ul>
                 </div>
