@@ -526,7 +526,7 @@ $year = date('Y');
                     <p class="product-description"><?php echo $product['description']; ?></p>
                     
                     <div class="btn-group">
-                        <a href="index.php#contact" class="btn">Request Information</a>
+                        <a href="contact.php" class="btn">Request Information</a>
                         <a href="products.php" class="btn btn-outline">View All Products</a>
                         <a href="product_detail.php?id=<?php echo $product_id; ?>" class="btn btn-secondary" onclick="window.print(); return false;">Print Details</a>
                     </div>

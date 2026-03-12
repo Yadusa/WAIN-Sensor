@@ -1194,7 +1194,7 @@ if ($all_products_result->num_rows > 0) {
                             <?php endif; ?>
                         </div>
                         <a href="product_detail.php?id=<?php echo $product['id']; ?>" class="btn">View Details</a>
-                        <a href="#contact" class="btn" style="background: #95a5a6;">Request Info</a>
+                        <a href="contact.php" class="btn" style="background: #95a5a6;">Request Info</a>
                     </div>
                 </div>
                 <?php endforeach; ?>
