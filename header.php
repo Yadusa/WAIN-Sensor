@@ -42,7 +42,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
         
         .header-content {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;   /* stack logo and menu */
             align-items: center;
         }
         
@@ -59,6 +59,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
         nav ul {
             display: flex;
             list-style: none;
+            margin-top: 10px;
+            justify-content: center;
         }
         
         nav ul li {
@@ -107,9 +109,12 @@ $current_page = basename($_SERVER['PHP_SELF']);
             <nav>
                 <ul>
                     <li><a href="index.php" <?php echo ($current_page == 'index.php') ? 'style="background-color: rgba(255, 255, 255, 0.2);"' : ''; ?>>Home</a></li>
-                    <li><a href="index.php#products" <?php echo ($current_page == 'index.php') ? 'style="background-color: rgba(255, 255, 255, 0.2);"' : ''; ?>>Products</a></li>
-                    <li><a href="index.php#about" <?php echo ($current_page == 'index.php') ? 'style="background-color: rgba(255, 255, 255, 0.2);"' : ''; ?>>About Us</a></li>
-                    <li><a href="index.php#contact" <?php echo ($current_page == 'index.php') ? 'style="background-color: rgba(255, 255, 255, 0.2);"' : ''; ?>>Contact</a></li>
+
+                    <li><a href="products.php" <?php echo ($current_page == 'products.php') ? 'style="background-color: rgba(255, 255, 255, 0.2);"' : ''; ?>>Products</a></li>
+
+                    <li><a href="about.php" <?php echo ($current_page == 'about.php') ? 'style="background-color: rgba(255, 255, 255, 0.2);"' : ''; ?>>About Us</a></li>
+
+                    <li><a href="contact.php" <?php echo ($current_page == 'contact.php') ? 'style="background-color: rgba(255, 255, 255, 0.2);"' : ''; ?>>Contact</a></li>
                     <?php if (isset($_SESSION['user_id'])): ?>
                         <li><a href="admin_dashboard.php" <?php echo ($current_page == 'admin_dashboard.php' || $current_page == 'add_product.php' || $current_page == 'edit_product.php') ? 'style="background-color: rgba(255, 255, 255, 0.2);"' : ''; ?>>Dashboard</a></li>
                         <li><a href="logout.php">Logout (<?php echo $_SESSION['username']; ?>)</a></li>
