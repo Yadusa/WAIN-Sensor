@@ -69,7 +69,8 @@ $year = date('Y');
         
         /* Header Styles */
         header {
-            background-color: #be23d6ff;
+            background-color: #00adef;
+            background-color: ;
             color: white;
             padding: 1rem 0;
             position: sticky;

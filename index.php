@@ -552,8 +552,8 @@ if ($all_products_result->num_rows > 0) {
                 <ul>
                     <li><a href="index.php" style="background-color: rgba(255, 255, 255, 0.2);">Home</a></li>
                     <li><a href="products.php">Products</a></li>
-                    <a href="about.php">About Us</a>
-                    <li><a href="contact.php">Inquiry</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="#contact">Inquiry</a></li>
                     
                 </ul>
             </nav>
