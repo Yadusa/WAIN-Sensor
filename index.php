@@ -34,34 +34,6 @@ if ($all_products_result->num_rows > 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $page_title; ?></title>
     <style>
-
-        nav a,
-        nav a:visited,
-        nav a:hover,
-        nav a:active {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        /* Make all navigation links white and remove underline */
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Ensure visited links stay white */
-        nav a:visited {
-        color: white;
-        font-weight: 500;
-        text-decoration: none;
-        }
-
-        /* Optional: Change color when hovering */
-        nav a:hover {
-            color: #e0e0e0;
-            text-decoration: underline;
-        }
         /* Reset and Base Styles */
         * {
             margin: 0;
@@ -552,7 +524,7 @@ if ($all_products_result->num_rows > 0) {
                 <ul>
                     <li><a href="index.php" style="background-color: rgba(255, 255, 255, 0.2);">Home</a></li>
                     <li><a href="products.php">Products</a></li>
-                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Inquiry</a></li>
                     
                 </ul>
@@ -640,6 +612,7 @@ if ($all_products_result->num_rows > 0) {
             </div>
         </div>
     </section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -749,7 +722,7 @@ if ($all_products_result->num_rows > 0) {
                     <ul>
                         <li><a href="index.php">Home</a></li>
                         <li><a href="products.php">Products</a></li>
-                        <li><a href="about.php">About Us</a></li>
+                        <li><a href="#about">About Us</a></li>
                         <li><a href="#contact">Inquiry</a></li>
                     </ul>
                 </div>
@@ -758,7 +731,7 @@ if ($all_products_result->num_rows > 0) {
                     <p>Email: enquiry@mccis.com.my</p>
                     <p>Phone: +606-317 7555</p>
                     <p>Fax: +606-317 7666
-                    <p>Address: 36C, Jalan PB1, Taman Padang Balang, Batu Berendam, 75350 Melaka, Malaysia.</p>
+                    <p>Address: 36C, Jalan PB1, Taman Padang Balang, Batu Brendam, 75350 Melaka, Malaysia.</p>
                 </div>
             </div>
             <div class="footer-bottom">
