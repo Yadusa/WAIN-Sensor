@@ -524,8 +524,8 @@ if ($all_products_result->num_rows > 0) {
                 <ul>
                     <li><a href="index.php" style="background-color: rgba(255, 255, 255, 0.2);">Home</a></li>
                     <li><a href="products.php">Products</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Inquiry</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="contact.php">Inquiry</a></li>
                     
                 </ul>
             </nav>
@@ -537,8 +537,8 @@ if ($all_products_result->num_rows > 0) {
         <div class="container">
             <h1>Precision Sensors for Industrial Applications</h1>
             <p>Discover our range of high-quality proximity and photoelectric sensors designed for industrial automation and control systems.</p>
-            <a href="#products" class="btn">Explore Products</a>
-            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            <a href="products.php" class="btn">Explore Products</a>
+            <a href="contact.php" class="btn btn-outline">Get In Touch</a>
         </div>
     </section>
 
@@ -608,7 +608,7 @@ if ($all_products_result->num_rows > 0) {
             <p>Browse our complete catalog with advanced filtering and search capabilities</p>
             <div class="cta-buttons">
                 <a href="products.php" class="btn btn-white">View All Products</a>
-                <a href="#contact" class="btn btn-transparent">Contact Sales</a>
+                <a href="contact.php" class="btn btn-transparent">Contact Sales</a>
             </div>
         </div>
     </section>
@@ -722,8 +722,8 @@ if ($all_products_result->num_rows > 0) {
                     <ul>
                         <li><a href="index.php">Home</a></li>
                         <li><a href="products.php">Products</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Inquiry</a></li>
+                        <li><a href="about.php">About Us</a></li>
+                        <li><a href="contact.php">Inquiry</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
