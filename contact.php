@@ -691,7 +691,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="products.php" >Products</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="about.php">About Us</a></li>
                     <li><a href="contact.php" style="background-color: rgba(255, 255, 255, 0.2);">Inquiry</a></li>
                 </ul>
             </nav>
